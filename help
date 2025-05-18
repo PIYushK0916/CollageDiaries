@@ -1,0 +1,48 @@
+<!-- <div class="card bg-black w-[30vh] rounded-2xl h-[20vh] overflow-hidden">
+                                        <div class="img">
+                                            <img class="scale-[1.8]" src="./src/images/poster.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card bg-black w-[30vh] rounded-2xl h-[20vh] overflow-hidden">
+                                        <div class="img">
+                                            <img class="scale-[1.8]" src="./src/images/poster.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card bg-black w-[30vh] rounded-2xl h-[20vh] overflow-hidden">
+                                        <div class="img">
+                                            <img class="scale-[1.8]" src="./src/images/poster.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card bg-black w-[30vh] rounded-2xl h-[20vh] overflow-hidden">
+                                        <div class="img">
+                                            <img class="scale-[1.8]" src="./src/images/poster.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card bg-black w-[30vh] rounded-2xl h-[20vh] overflow-hidden">
+                                        <div class="img">
+                                            <img class="scale-[1.8]" src="./src/images/poster.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card bg-black w-[30vh] rounded-2xl h-[20vh] overflow-hidden">
+                                        <div class="img">
+                                            <img class="scale-[1.8]" src="./src/images/poster.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card bg-black w-[30vh] rounded-2xl h-[20vh] overflow-hidden">
+                                        <div class="img">
+                                            <img class="scale-[1.8]" src="./src/images/poster.jpg" alt="">
+                                        </div>
+                                    </div> -->
+
+                                    @keyframes scroll {
+                                        0% {
+                                          transform: translateX(100%);
+                                        }
+                                        100% {
+                                          transform: translateX(-100%);
+                                        }
+                                      }
+                                      
+                                      .scroll-animation {
+                                        animation: scroll 20s linear infinite;
+                                      }

@@ -1,0 +1,144 @@
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@font-face {
+    font-family: 'Stacker';
+    src: url('fonts/Stacker.ttf') format('truetype');
+  }
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.animated-background {
+    animation: gradientAnimation 10s ease infinite;
+    background: linear-gradient(to right, #4CAF50, #00BCD4);
+    background-size: 200% 200%;
+}
+
+.ani-spin {
+    /* Add your animation properties here */
+    animation: spin 10s linear infinite;
+}
+
+.texture{
+    mix-blend-mode: exclusion;
+    z-index: 9000;
+    opacity:0.19;
+}
+
+.big-text{
+    font-family: "Bricolage Grotesque";
+}
+
+.marquee, .marquee2, .marquee-reverse {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .marquee span, .marquee2 span, .marquee-reverse span {
+    display: inline-block;
+    padding-right: 100%;
+  }
+  
+  .marquee,.marquee2 {
+    animation: marquee 25s linear infinite;
+    animation-delay: -3s;
+  }
+  
+  .marquee-reverse {
+    animation: marquee-reverse 18s linear infinite;
+    animation-delay: -6s;
+
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  @keyframes marquee-reverse {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  .marquee1, .marquee-reverse1 {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .marquee1 span, .marquee-reverse1 span {
+    display: inline-block;
+    padding-right: 100%;
+  }
+  
+  .marquee1 {
+    animation: marquee1 19s linear infinite;
+    animation-delay: -7s;
+  }
+  
+  .marquee-reverse1 {
+    animation: marquee-reverse 10s linear infinite;
+    animation-delay: -9s;
+
+  }
+  
+  @keyframes marquee1 {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  @keyframes marquee-reverse1 {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  .img-cont {
+    position: relative;
+    width: 72vh;
+    height: 42vh;
+  }
+  
+  .img-cont:hover img {
+    transform: scale(1.1); /* Scale the image to 110% on hover */
+    transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+  }
+  
+  .img-cont img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Ensure the transition is applied on initial load */
+  }
+
+  .video-enlarged {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+    transition: transform 0.3s ease; /* Optional: Add transition for smooth scaling */
+}
+
+.rotate-img {
+  animation: rotate 5s linear infinite; /* Adjust timing and animation type as needed */
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
